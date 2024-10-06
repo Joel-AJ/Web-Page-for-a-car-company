@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Drive Booking</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="about-header">
+        <h1 class="animated-header">Bugatti</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <ul class="navbar-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact-section">Contact</a></li>
+                    <li><a href="index.html#cars">Our Cars</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <table class="form-table">
+        <h2 class="form-title">Test Drive Booking</h2>
+        <form id="bookingForm">
+            <!-- Name -->
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+
+            <!-- Country -->
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" name="country" placeholder="Enter your country" required></td>
+            </tr>
+
+            <!-- Contact Number (Country Code + Number) -->
+            <tr>
+                <td><label for="contact">Contact Number:</label></td>
+                <td>
+                    <select id="country-code" name="country-code" required>
+                        <option value="" disabled selected>Select Country Code</option>
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+81">+81 (Japan)</option>
+                        <option value="+61">+61 (Australia)</option>
+                    </select>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+
+            <!-- Car Model -->
+            <tr>
+                <td><label for="car-model">Car Model:</label></td>
+                <td>
+                    <select id="car-model" name="car-model" required>
+                        <option value="" disabled selected>Select Model</option>
+                        <option value="Chiron">Bugatti Chiron</option>
+                        <option value="Divo">Bugatti Divo</option>
+                        <option value="Mistral">Bugatti Mistral</option>
+                        <option value="Bolide">Bugatti Bolide</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Terms and Conditions -->
+            <tr>
+                <td colspan="2">
+                    <label><input type="checkbox" id="terms" required> I accept the terms and conditions</label>
+                </td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <!-- Popup Message -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Test Drive Booking Successful!</h3>
+            <p>Thank you for booking a test drive.</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

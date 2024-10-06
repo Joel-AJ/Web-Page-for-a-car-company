@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    background-color: #000; /* Fallback background color */
+    transition: background 0.5s ease; /* Smooth transition for background */
+    color: white; /* Default text color */
+    background-image: url('Images/Chiron\ 2.jpg'); /* Ensure the path is correct */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+.about-header {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Maintain position for animations */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.about-header h1 {
+    color: white;
+    font-size: 7rem; /* Same font size as homepage */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Similar transition effects */
+}
+
+
+.animated-header {
+    color: white; /* Text color */
+    font-size: 7rem; /* Font size */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Space around the heading */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation properties */
+}
+
+.grid-container {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 80vh; /* Optional: adjust based on your layout */
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color */
+    color: white; /* Button text color */
+    font-size: 1.5rem; /* Font size */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 200px; /* Space above the button */
+    text-align: center;
+}
+
+.explore-button:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Change color on hover */
+}
+
+
+.about-car-section {
+    padding-top: 80px; /* Ensure the section is visible */
+}
+
+.spec-section {
+    padding-top: 80px; /* Ensure the section is visible */
+}
+
+.navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #ff0000da; /* Change color on hover */
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 15px 0; /* Padding for the nav bar */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center align items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between links */
+}
+
+.navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.navbar a:hover {
+    color: hsla(0, 100%, 50%, 0.836); /* Change color on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.animated-header {
+    color: white;
+    font-size: 7rem;
+}
+
+.about-car-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: left;
+    background: url('chiron-background.jpg') no-repeat center center; /* Ensure this image path is correct */
+    background-size: cover; /* Cover the entire section */
+    transition: opacity 0.5s ease; /* Transition for fading out */
+    padding-top: 80px;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about-car-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: hwb(0 0% 17%);
+    text-transform: uppercase;
+}
+
+.about-car-section p {
+    font-size: 1.2rem; 
+    color: white; 
+    font-family: 'Jura', sans-serif; 
+    line-height: 1.6; 
+    margin-top: 10px; 
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.spec-section {
+    padding: 40px 20px;
+    background-color: hsl(0, 0%, 0%);
+    text-align: center;
+}
+
+.spec-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.spec-section table {
+    width: 100%;
+    max-width: 800px; /* Ensure the table doesn't get too wide */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spec-section th, .spec-section td {
+    padding: 12px 20px;
+    border: 1px solid #ffffff;
+    text-align: left;
+    font-size: 1em;
+    color: hsl(0, 0%, 100%);
+}
+
+.spec-section th {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spec-section td {
+    background-color: #000000;
+}
+
+/* Hover Effect */
+.spec-section tr:hover {
+    background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .spec-section h2 {
+        font-size: 1.5em;
+    }
+
+    .spec-section table {
+        width: 100%; /* Ensure the table takes full width on smaller screens */
+    }
+
+    .spec-section th, .spec-section td {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spec-section h2 {
+        font-size: 1.2em;
+    }
+
+    .spec-section table, 
+    .spec-section thead, 
+    .spec-section tbody, 
+    .spec-section th, 
+    .spec-section td, 
+    .spec-section tr {
+        display: block;
+        width: 100%;
+    }
+
+    .spec-section thead {
+        display: none; /* Hide table headers */
+    }
+
+    .spec-section tr {
+        margin-bottom: 20px; /* Add spacing between rows */
+        border-bottom: 2px solid hsl(0, 0%, 100%);
+    }
+
+    .spec-section td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: left;
+        font-size: 0.9em;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .spec-section td:before {
+        content: attr(data-label); /* Add data-label for mobile view */
+        font-weight: bold;
+        width: 50%;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+}
